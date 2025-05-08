@@ -1,4 +1,4 @@
-// problem 1
+
 function formatString(input: string, toUpper?: boolean): string{
     if(toUpper === false){
         return input.toLowerCase();
@@ -11,7 +11,7 @@ function formatString(input: string, toUpper?: boolean): string{
 }
 
  
-// problem 2 
+
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]{
 
     return items.filter(item => item.rating >= 4);
@@ -19,13 +19,13 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
 
 
 
-// problem 3
+
 function concatenateArrays<T>(...arrays: T[][]): T[]{
     return arrays.flat();    
 }
 
 
-// problme 4
+
 
 class Vehicle {
     private make: string;
@@ -56,7 +56,7 @@ class Car extends Vehicle{
 }
 
 
-// problme 5 
+
 function processValue(value: string | number): number{
     if(typeof value === 'string'){
         return value.length;
@@ -67,7 +67,7 @@ function processValue(value: string | number): number{
 }
 
 
-// problem 6
+
 
 interface Product {
     name: string;
@@ -90,7 +90,7 @@ interface Product {
   }
  
 
-  // problem 7
+  
 
   enum Day {
     Monday,
@@ -112,7 +112,7 @@ interface Product {
   }
 
 
-  // problem 8 
+  
   async function squareAsync(n: number): Promise<number>{
     if(n < 0) {
         throw new Error("Negative numbers are not allowed");
